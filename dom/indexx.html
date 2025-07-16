@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#container{
+    width: 400px;
+    height: 400px;
+    background:#0d3550;
+    position:inherit;
+    border: 4px solid rgb(146, 186, 214);
+    border-radius: 10px;
+}
+#insider{
+    height: 50px;
+    width: 50px;
+    background: #d584cd;
+    position: absolute;
+    border: 2px solid #ddcade;
+    border-radius:5px;
+}
+    </style>
+</head>
+<body>
+    <div id= "container">
+        <div id="insider"></div>
+    </div>
+    <p> <button onclick = "myMove()">Click</button>
+    <!-- <button onclick =changeColor()>Change color</button></p> -->
+    <button id ="btn">click me </button>
+    
+    <script>
+//         function myMove(){
+//     let pos =0;
+//     const elem = document.getElementById("insider");
+//     const id = setInterval(frame,10);
+//     function frame() {
+//         if(pos ==350){
+//             clearInterval(id);
+//         }
+//         pos++;
+//         elem.style.top = pos+ 'px';
+//         elem.style.left = pos + 'px';
+//     }
+
+// }
+
+//    function changeColor(){
+//     var div = document.getElementById("container")
+//     div.style.backgroundColor = "#f7d2c4";
+   
+//    }
+document.getElementById("btn").
+addEventListener('click',fun)
+function fun(){
+    document.getElementById("insider").style.backgroundColor = "#f7d2c4";
+}
+    </script>
+    
+</body>
+</html>
